@@ -1,0 +1,194 @@
+.vehicle_card_wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(234, 233, 233);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.vehicle_card_wrapper:hover {
+  cursor: pointer;
+}
+
+.vehicle_card_wrapper:hover .card_vehicle_name {
+  color: #7d2ae8;
+  text-decoration: underline;
+}
+
+.vehicle_card_left,
+.vehicle_card_right {
+  flex: 1;
+  width: 50%;
+}
+
+.vehicle_img_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.vehicle_card_right {
+  width: 100%;
+}
+
+.vehicle_card_left {
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 35px;
+}
+
+.vehicle_card_left_upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 35px; */
+}
+
+.vehicle_card_left_upper_left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.vehicle_card_left_upper_left .new_or_old {
+  font-size: 13px;
+}
+
+.vehicle_card_left_upper_left .price {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.vehicle_card_left_upper_left .price .main_price {
+  font-weight: 800;
+}
+
+.vehicle_card_left_upper_left .price .msrp_price {
+  font-size: 13px;
+}
+
+.vehicle_card_left_upper_left a {
+  text-decoration: none;
+  color: #7d2ae8;
+}
+
+.vehicle_card_left_upper_right_wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.vehicle_card_left_upper_right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.vehicle_card_left_upper_right:hover {
+  color: #7d2ae8;
+}
+
+.vehicle_card_left_lower {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.vehicle_card_left_lower_left .vehicle_man {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.vehicle_rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.reviews_count {
+  font-size: 13px;
+}
+
+.vehicle_card_left_lower .vehicle_card_left_lower_right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.vehicle_card_left_lower
+  .vehicle_card_left_lower_right
+  .check_availability_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: #7d2ae8;
+  color: white;
+  padding: 5px 40px;
+  cursor: pointer;
+  font-weight: 450;
+}
+
+.vehicle_card_left_lower
+  .vehicle_card_left_lower_right
+  .check_availability_btn:hover {
+  background-color: #532380;
+  /* opacity: 0.7; */
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 800px) {
+  .vehicle_card_wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .vehicle_card_left {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vehicle_card_left_lower {
+    flex-direction: column;
+  }
+
+  .vehicle_rating {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .vehicle_rating .reviews_count {
+    font-size: 13px;
+  }
+
+  .vehicle_card_right {
+    flex: 1;
+    width: 100%;
+  }
+
+  .vehicle_card_left {
+    flex: 1;
+    width: 90%;
+  }
+
+  .vehicle_card_left_lower
+    .vehicle_card_left_lower_right
+    .check_availability_btn {
+    padding: 5px 40px !important;
+  }
+}

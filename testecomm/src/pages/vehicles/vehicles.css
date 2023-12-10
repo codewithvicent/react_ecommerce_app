@@ -1,0 +1,90 @@
+.vehicles_wrapper {
+  padding: 25px 140px;
+}
+
+.vehicles_wrapper .vehicle_header {
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.view_more {
+  color: #7d2ae8;
+  text-decoration: none;
+}
+
+.view_more:hover {
+  color: #532380;
+  text-decoration: underline;
+}
+
+.vehicle_upper_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vehicle_upper_section .filter_vehicles {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.vehicle_upper_section .sort_vehicles {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.vehicle_upper_section h3 {
+  font-weight: 450;
+  font-size: 18px;
+}
+
+.vehicle_upper_section select {
+  padding: 5px 10px;
+  outline: none;
+  font-size: 13px;
+  border-radius: 2px;
+}
+
+.load_more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 40%;
+  background-color: #7d2ae8;
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: 450;
+  margin-top: 15px;
+}
+
+.load_more:hover {
+  background-color: #532380;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 800px) {
+  .vehicles_wrapper {
+    padding: 10px;
+  }
+
+  .vehicle_upper_section {
+    display: none;
+  }
+
+  .load_more {
+    width: 90%;
+  }
+}
+
+.category_and_color {
+  display: flex;
+  gap: 10px;
+}
